@@ -4,24 +4,25 @@ using namespace std;
 class Reverse
 {
     public:
-    int n= 12345;
+    int n = 12345;  // Initialize the number to be reversed
 
     public:
     void method()
     {
-        int x, y=0, i;
-        while (n>0)   //for(i=1; i<=5; i++)     // using while instead of for removes the
-        {                                       // need to specify no. of digits manually 
-        x=n%10;    // x = 12345 % 10 = 5
-        n=n/10;    // n = 12345 / 10 = 1234
-        y=(y*10)+x;   // y = (0 *10)+5 = 5   next y=(5*10)+4 = 50 + 4 = 54
+        int x, y = 0, i;
+        // Use a while loop to reverse the number
+        while (n > 0)   // Using while instead of for removes the
+        {               // need to specify the number of digits manually 
+            x = n % 10;    // Get the last digit of n
+            n = n / 10;    // Remove the last digit from n
+            y = (y * 10) + x;   // Append the last digit to y
         }
-        cout<<y;
+        cout << y;  // Output the reversed number
     }
 };
 
 int main()
 {
-    Reverse r;
-    r.method();
+    Reverse r;  // Create an object of the Reverse class
+    r.method(); // Call the method to reverse the number
 }
