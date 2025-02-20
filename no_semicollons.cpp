@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-    for(cout<<"Helloooo!!!"){}
+    if(cout<<"Helloooo!!\n"){}
 
-    switch (cout<<"Helloooo!!!"){}
+    switch (cout<<"Helloooo!!!", 0){}
 
     return 0;
 }
