@@ -1,6 +1,5 @@
-#include <iostream> // Include the input-output stream library
-using namespace std; // Use the standard namespace
-
+#include <iostream> 
+using namespace std; 
 int main()
 {
     // Print "Helloooo!!" using the cout object inside an if statement
