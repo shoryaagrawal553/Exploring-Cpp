@@ -25,4 +25,6 @@ int main()
 {
     Reverse r;  // Create an object of the Reverse class
     r.method(); // Call the method to reverse the number
+
+    return 0;
 }
