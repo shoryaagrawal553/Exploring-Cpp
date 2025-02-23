@@ -32,4 +32,6 @@ int main()
         // If the input number is less than or equal to 1, it's invalid
         cout << "invalid input";
     }
+
+    return 0;
 }
