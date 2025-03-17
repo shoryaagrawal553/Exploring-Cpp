@@ -1,36 +1,33 @@
-/*n= 3
+/*
+This program generates a square pattern of letters up to the given number of rows.
+Example:
+n = 3
 A B C 
 A B C 
-A B C */
+A B C
+*/
 
 #include <iostream>
 using namespace std;
+
 int main()
 {
     int n, i;
-    // int j;
+    // Ask the user for the number of rows
     cout << "enter ";
     cin >> n;
-    // for (i = 1; i <= n; i++)  //using j as int
-    // {                         
-    //     char ch = 'A';
-    //     for (j = 1; j <= n; j++)
-    //     {
-    //         cout << ch << " ";
-    //         // ch=ch+1;
-    //         ch++;
-    //     }
-    //     cout << endl;
-    // }
 
+    // Declare j as a character variable
     char j;
-    for (i = 1; i <= n; i++)   //using j as char
-    {                          //or printing using a char in iteration
-        for (j = 'A'; j <'A'+n; j++)
+    // Loop through each row
+    for (i = 1; i <= n; i++) // Using j as a char
+    {                        // Printing using a char in iteration
+        // Loop through each column in the current row
+        for (j = 'A'; j < 'A' + n; j++)
         {
-            cout << j << " ";
+            cout << j << " "; // Print the current character
         }
-        cout << endl;
+        cout << endl; // Move to the next line after finishing the current row
     }
 
     return 0;
