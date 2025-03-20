@@ -10,7 +10,7 @@ int fact(int n)
 
 int main()
 {
-    int n;
+    int n; 
     cout<<"Enter a number ";
     cin>>n;
     cout<<"Factorial of "<<n<<" is "<<fact(n)<<endl;
