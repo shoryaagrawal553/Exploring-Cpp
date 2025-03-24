@@ -14,7 +14,7 @@ int main()
     cin>>n;
 
     int x=0;
-    for(i=1; i<=n; i++)
+    for(i=1; i<=n; i++) 
     {
         for(j=1; j<=n-i; j++)
         {
