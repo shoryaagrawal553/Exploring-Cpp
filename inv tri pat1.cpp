@@ -9,27 +9,27 @@ using namespace std;
 
 int main()
 {
-    int n, i, j;
-    cout<<"enter ";
-    cin>>n;
+    int n, i, j;  // Variable declaration
+    cout << "enter ";  // Prompt user to enter a number
+    cin >> n;  // Read the number
 
-    //char ch='A';
+    //char ch = 'A'; // Initialize character 'ch' to 'A' (unused in this implementation)
 
-    for(i=1; i<=n; i++)
+    for (i = 1; i <= n; i++)  // Outer loop for rows
     {
-        for(j=1; j<i; j++)// spaces
+        for (j = 1; j < i; j++)  // Inner loop for printing spaces
         {
-            cout<<"  ";
+            cout << "  ";  // Print spaces
         }
 
-        for(j=1; j<=n-i+1; j++)
+        for (j = 1; j <= n - i + 1; j++)  // Inner loop for printing characters
         {
-            //cout<<ch<<" ";
-            cout<<char('A'+i-1)<<" "; // i=1 => A+1-1= A; i=2 => A+2= C-1= B
+            //cout << ch << " ";  // Print character (unused in this implementation)
+            cout << char('A' + i - 1) << " ";  // Calculate and print character based on the current row
         }
 
-        cout<<endl;
-       // ch++;
+        cout << endl;  // Move to the next line
+        // ch++;  // Increment character (unused in this implementation)
     }
-    return 0;
+    return 0;  // Return 0 to indicate successful execution
 }
