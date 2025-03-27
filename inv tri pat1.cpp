@@ -5,31 +5,31 @@ A A A A
       D   */
 
 #include <iostream>
-using namespace std; 
+using namespace std;
 
 int main()
 {
-    int n, i, j;  // Variable declaration
-    cout << "enter ";  // Prompt user to enter a number
-    cin >> n;  // Read the number
+    int n, i, j;
+    cout<<"enter ";
+    cin>>n;
 
-    //char ch = 'A'; // Initialize character 'ch' to 'A' (unused in this implementation)
+    //char ch='A';
 
-    for (i = 1; i <= n; i++)  // Outer loop for rows
+    for(i=1; i<=n; i++)
     {
-        for (j = 1; j < i; j++)  // Inner loop for printing spaces
+        for(j=1; j<i; j++)// spaces
         {
-            cout << "  ";  // Print spaces
+            cout<<"  ";
         }
 
-        for (j = 1; j <= n - i + 1; j++)  // Inner loop for printing characters
+        for(j=1; j<=n-i+1; j++)
         {
-            //cout << ch << " ";  // Print character (unused in this implementation)
-            cout << char('A' + i - 1) << " ";  // Calculate and print character based on the current row
+            //cout<<ch<<" ";
+            cout<<char('A'+i-1)<<" "; // i=1 => A+1-1= A; i=2 => A+2= C-1= B
         }
 
-        cout << endl;  // Move to the next line
-        // ch++;  // Increment character (unused in this implementation)
+        cout<<endl;
+       // ch++;
     }
-    return 0;  // Return 0 to indicate successful execution
+    return 0;
 }
