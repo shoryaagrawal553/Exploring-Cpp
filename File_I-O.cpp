@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     //cout << "to write in a file";
-
+ 
     ofstream outFile("sample_file.txt");
     // OR ofstream out ("sample_file.txt");
 
