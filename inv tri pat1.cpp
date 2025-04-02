@@ -1,35 +1,33 @@
-/*enter 4
-A A A A 
-  B B B 
-    C C 
-      D   */
+/* This program prints an inverted triangular pattern of letters
+   Example for n = 4:
+   A A A A 
+     B B B 
+       C C 
+         D
+*/
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n, i, j;
-    cout<<"enter ";
-    cin>>n;
+    int n, i, j; // Declare variables for the number of rows and loop counters
+    cout << "enter "; // Prompt user to enter the number of rows
+    cin >> n; // Read the number of rows
 
-    //char ch='A';
-
-    for(i=1; i<=n; i++)
+    for (i = 1; i <= n; i++) // Loop for each row
     {
-        for(j=1; j<i; j++)// spaces
+        for (j = 1; j < i; j++) // Loop to print leading spaces
         {
-            cout<<"  ";
+            cout << "  "; // Print two spaces for each iteration
         }
 
-        for(j=1; j<=n-i+1; j++)
+        for (j = 1; j <= n - i + 1; j++) // Loop to print characters
         {
-            //cout<<ch<<" ";
-            cout<<char('A'+i-1)<<" "; // i=1 => A+1-1= A; i=2 => A+2= C-1= B
+            cout << char('A' + i - 1) << " "; // Print the character based on the current row number
         }
 
-        cout<<endl;
-       // ch++;
+        cout << endl; // Move to the next line after each row
     }
-    return 0;
+    return 0; // Return 0 to indicate successful execution
 }
