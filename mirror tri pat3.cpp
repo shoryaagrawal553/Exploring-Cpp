@@ -1,8 +1,11 @@
-/*enter 4
+/* 
+This program prints a mirrored right-angled triangle pattern with incremental numbers based on user input.
+Example for n = 4:
       1 
     1 2 
   1 2 3 
-1 2 3 4   */
+1 2 3 4
+*/
 
 #include<iostream>
 using namespace std;
@@ -10,22 +13,29 @@ using namespace std;
 int main()
 {
     int n, i, j;
-    cout<<"enter ";
-    cin>>n;
+    
+    // Prompt the user to enter the number of rows for the triangle
+    cout << "enter ";
+    cin >> n;
 
-    for(i=1; i<=n; i++)
+    // Loop through each row from 1 to n
+    for(i = 1; i <= n; i++)
     {
-        for(j=1; j<=n-i; j++)
+        // Print spaces to create the mirrored effect
+        // The number of spaces is determined by (n - i)
+        for(j = 1; j <= n - i; j++)
         {
-            cout<<"  ";
+            cout << "  "; // Print two spaces for alignment
         }
 
-        for(j=1; j<=i; j++)
+        // Print incremental numbers starting from 1 up to the current row number
+        for(j = 1; j <= i; j++)
         {
-            cout<<j<<" ";
+            cout << j << " "; // Print the number 'j' followed by a space
         }
 
-        cout<<endl;
+        // Move to the next line after finishing one row
+        cout << endl;
     }
 
     return 0;
