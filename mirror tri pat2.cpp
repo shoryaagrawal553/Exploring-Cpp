@@ -1,4 +1,6 @@
-/* enter n 4
+/* 
+This program prints a mirrored right-angled triangle pattern with numbers based on user input.
+Example for n = 4:
       1
     2 2
   3 3 3
@@ -11,22 +13,30 @@ using namespace std;
 int main()
 {
     int n, i, j;
-    cout<<"enter n ";
-    cin>>n;
     
-    for(i=1; i<=n; i++)
+    // Prompt the user to enter the number of rows for the triangle
+    cout << "enter n ";
+    cin >> n;
+    
+    // Loop through each row from 1 to n
+    for(i = 1; i <= n; i++)
     {
-        for(j=1; j<=n-i; j++)  // OR  for(j=i; j<=n-1; j++)
+        // Print spaces to create the mirrored effect
+        // The number of spaces is determined by (n - i)
+        for(j = 1; j <= n - i; j++)  // OR  for(j = i; j <= n - 1; j++)
         {
-            cout<<"  ";
+            cout << "  "; // Print two spaces for alignment
         }
 
-        for(j=1; j<=i; j++)   // OR  for(j=n; j>=n-i+1; j--)
+        // Print the number 'i', 'i' times in each row
+        // The number of times 'i' is printed is determined by 'i'
+        for(j = 1; j <= i; j++)   // OR  for(j = n; j >= n - i + 1; j--)
         {
-            cout<<i<<" ";
+            cout << i << " "; // Print the number 'i' followed by a space
         }
 
-        cout<<endl;
+        // Move to the next line after finishing one row
+        cout << endl;
     }
 
     return 0;
