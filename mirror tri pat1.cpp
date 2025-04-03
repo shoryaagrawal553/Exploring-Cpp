@@ -1,4 +1,6 @@
-/*enter n 4
+/* 
+This program prints a mirrored right-angled triangle pattern based on user input.
+Example for n = 4:
 + + + * 
 + + * *
 + * * *
@@ -10,44 +12,50 @@ using namespace std;
 
 int main()
 {
-    int i,j,n;
+    int i, j, n;
     
-    cout<<"enter n ";
-    cin>>n;
+    // Prompt the user to enter the number of rows for the triangle
+    cout << "enter n ";
+    cin >> n;
     
-    for(i=1; i<=n; i++)
+    // First method to print the pattern
+    for(i = 1; i <= n; i++)
     {
-        for(j=i; j<=n-1; j++)
+        // Print '+' characters
+        for(j = i; j <= n - 1; j++)
         {
-            //cout<<"  ";  
-            cout<<"+ ";
+            cout << "+ ";  
         }
         
-        for(j=1; j<=i; j++)
+        // Print '*' characters
+        for(j = 1; j <= i; j++)
         {
-            cout<<"* ";
+            cout << "* ";
         }
-        cout<<endl;
+        cout << endl; // Move to the next line
     }
 
     // OR
 
-    cout<<"enter n ";
-    cin>>n;
+    // Prompt the user to enter the number of rows for the triangle again
+    cout << "enter n ";
+    cin >> n;
 
-    for(i=1; i<=n; i++)
+    // Second method to print the pattern
+    for(i = 1; i <= n; i++)
     {
-        for(j=1; j<=n-i; j++)
+        // Print '+' characters
+        for(j = 1; j <= n - i; j++)
         {
-            //cout<<"  ";  
-            cout<<"+ ";
+            cout << "+ ";  
         }
 
-        for(j=1; j<=i; j++)
+        // Print '*' characters
+        for(j = 1; j <= i; j++)
         {
-            cout<<"* ";
+            cout << "* ";
         }   
-        cout<<endl; 
+        cout << endl; // Move to the next line
     }
 
     return 0;
