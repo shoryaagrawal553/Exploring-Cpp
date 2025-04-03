@@ -1,33 +1,40 @@
-/*enter 4
+/* Pattern for n=4
       A 
     A B 
   A B C 
-A B C D   */
+A B C D   
+*/
 
 #include<iostream>
 using namespace std;
+
 int main()
 {
     int n, i, j;
 
-    cout<<"enter ";
-    cin>>n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
 
-    for(i=1; i<=n; i++)
+    // Loop to handle number of rows
+    for(i = 1; i <= n; i++)
     {
-        for(j=1; j<=n-i; j++)
+        // Loop to handle number of spaces
+        for(j = 1; j <= n - i; j++)
         {
-            cout<<"  ";
+            cout << "  ";  // print space
         }
-                            //  OR
-        char ch='A';         //char j;
-        for(j=1; j<=i; j++)  // for(j='A'; j<=ch+i-1; j++)
-        {                    // {
-            cout<<ch<<" ";   //     cout<<j<<" ";
-            ch++;           //  }
+        
+        // Initialize character 'A' for each row
+        char ch = 'A';
+        
+        // Loop to print characters in each row
+        for(j = 1; j <= i; j++)
+        {
+            cout << ch << " ";  // print character
+            ch++;  // move to next character
         }
 
-        cout<<endl;
+        cout << endl;  // move to next line after each row
     }
 
     return 0;
