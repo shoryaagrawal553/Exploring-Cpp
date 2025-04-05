@@ -1,28 +1,29 @@
-#include <iostream> // Include the input-output stream library
-using namespace std; // Use the standard namespace
+#include <iostream>
+using namespace std;
 
-int main() {
-    int n = 6; // Define the size of the array
-    int arr[n] = {1, 2, 3, 4, 5, 6}; // Initialize the array with elements
-    int start = 0, end = n - 1, i; // Initialize variables for the start and end indices and a loop counter
+int main()
+{
+    int n=6;
+    int arr[n]={1,2,3,4,5,6};
+    int start=0, end=n-1, i ;  
 
-    // Print the initial array
-    cout << "Initial array \n";
-    for (i = 0; i < n; i++) {
-        cout << arr[i] << " "; // Print each element of the array
+    cout<<"initial array \n";
+    for(i=0; i<n; i++)
+    {
+        cout<<arr[i]<<" ";
     }
 
-    // Reverse the array
-    while (start < end) {
-        swap(arr[start], arr[end]); // Swap the elements at the start and end indices
-        start++; // Move the start index to the right
-        end--; // Move the end index to the left
+    while(start<end) //for (int start = 0, end = n - 1; start < end; start++, end--)
+    {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
     }
 
-    // Print the reversed array
-    cout << "\nReversed array \n";
-    for (i = 0; i < n; i++) {
-        cout << arr[i] << " "; // Print each element of the reversed array
+    cout<<"\nReversed array \n";
+    for(i=0; i<n; i++)
+    {
+        cout<<arr[i]<<" ";
     }
-    return 0; // Return 0 to indicate successful execution
+    return 0;
 }
