@@ -1,12 +1,15 @@
-/*enter 4
-* * * * * * * * 
-* * *     * * *
-* *         * *
-*             *
-*             *
-* *         * *
-* * *     * * * 
-* * * * * * * *    */
+/* This program generates a symmetric star pattern based on the input value 'n'.
+   The pattern consists of two parts: the upper triangle and the lower triangle.
+   Example for input 4:
+   * * * * * * * * 
+   * * *     * * *
+   * *         * *
+   *             *
+   *             *
+   * *         * *
+   * * *     * * * 
+   * * * * * * * *
+*/
 
 #include <iostream>
 using namespace std;
@@ -14,103 +17,111 @@ using namespace std;
 int main()
 {
     int n, i, j, j2, j3;
-    cout << "enter ";
+
+    // Prompt the user to enter the size of the pattern
+    cout << "Enter the size of the pattern: ";
     cin >> n;
 
-    for(i=1; i<=n; i++)
+    // Upper triangle of the pattern
+    for(i = 1; i <= n; i++)
     {
-        for(j=i; j<=n; j++) // or for(j=n; j>=i; j--)
+        // Print stars in decreasing order
+        for(j = i; j <= n; j++) 
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        for(j2=1; j2<=(i*2)-2; j2++) //spaces
-        // i=1 => j2=1 to 1*2-2=0 => 0 times => no space        
-        // i=2 => j2=1 to 2*2-2=2 => 2 times => 2 spaces
+        // Print spaces in increasing order
+        for(j2 = 1; j2 <= (i * 2) - 2; j2++) 
         {
-            cout<<"  ";
+            cout << "  ";
         }
 
-        for(j3=i; j3<=n; j3++)
+        // Print stars in decreasing order
+        for(j3 = i; j3 <= n; j3++)
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        cout<<endl;
+        cout << endl; // Move to the next line after completing a row
     }
 
-    for(i=1; i<=n; i++)
+    // Lower triangle of the pattern
+    for(i = 1; i <= n; i++)
     {
-        for(j=1; j<= i; j++) // stars
+        // Print stars in increasing order
+        for(j = 1; j <= i; j++) 
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        for(j2=1; j2<=(2*n)-(2*i); j2++) // spaces
-        {// i=1 => j2=1 to 2*4-2=6 => 6 times => 6 spaces
-        // i=2 => j2=1 to 2*4-4=4 => 4 times => 4 spaces
-
-            cout<<"  ";
-        }
-
-        for(j=1; j<= i; j++) // stars
+        // Print spaces in decreasing order
+        for(j2 = 1; j2 <= (2 * n) - (2 * i); j2++) 
         {
-            cout<<"* ";
+            cout << "  ";
         }
 
-        cout<<endl;
+        // Print stars in increasing order
+        for(j = 1; j <= i; j++) 
+        {
+            cout << "* ";
+        }
+
+        cout << endl; // Move to the next line after completing a row
     }
-                    // OR
 
-
+    // Alternative implementation of the same pattern using a different logic
     int row, col;
-    cout<<"Enter the input: ";
-    cin>>n;
-    for(row=n; row>=1; row--)
+    cout << "Enter the input for alternative pattern: ";
+    cin >> n;
+
+    // Upper triangle of the pattern
+    for(row = n; row >= 1; row--)
     {
-        for(col=1;col<=row;col++) // stars
-        {// i=5 => j=1 to 5 => 5 times => 5 stars
-        // i=4 => j=1 to 4 => 4 times => 4 stars
-            cout<<"* ";
+        // Print stars in decreasing order
+        for(col = 1; col <= row; col++) 
+        {
+            cout << "* ";
         }
 
-        for(col=1;col<=2*n-2*row; col++) // spaces
-        { // i=5 => j=1 to 2*5-2*5=0 => 0 times => no space
-        // i=4 => j=1 to 2*5-2*4=2 => 2 times => 2 spaces
-            cout<<"  ";
+        // Print spaces
+        for(col = 1; col <= 2 * n - 2 * row; col++) 
+        {
+            cout << "  ";
         }
 
-        for(col=1;col<=row;col++) // stars
-        { // i=5 => j=1 to 5 => 5 times => 5 stars
-        // i=4 => j=1 to 4 => 4 times => 4 stars
-            cout<<"* ";
+        // Print stars in decreasing order
+        for(col = 1; col <= row; col++) 
+        {
+            cout << "* ";
         }
 
-            cout<<endl;
+        cout << endl; // Move to the next line after completing a row
     }
 
-    for(row=1; row<=n; row++)
+    // Lower triangle of the pattern
+    for(row = 1; row <= n; row++)
     {
-        for(col=1;col<=row;col++) // stars
-        {// i=5 => j=1 to 5 => 5 times => 5 stars
-        // i=4 => j=1 to 4 => 4 times => 4 stars
-            cout<<"* ";
+        // Print stars in increasing order
+        for(col = 1; col <= row; col++) 
+        {
+            cout << "* ";
         }
 
-        for(col=1;col<=2*n-2*row; col++) // spaces
-        { // i=5 => j=1 to 2*5-2*5=0 => 0 times => no space
-        // i=4 => j=1 to 2*5-2*4=2 => 2 times => 2 spaces
-            cout<<"  ";
+        // Print spaces
+        for(col = 1; col <= 2 * n - 2 * row; col++) 
+        {
+            cout << "  ";
         }
 
-        for(col=1;col<=row;col++) // stars
-        { // i=5 => j=1 to 5 => 5 times => 5 stars
-        // i=4 => j=1 to 4 => 4 times => 4 stars
-            cout<<"* ";
+        // Print stars in increasing order
+        for(col = 1; col <= row; col++) 
+        {
+            cout << "* ";
         }
 
-            cout<<endl;
+        cout << endl; // Move to the next line after completing a row
     }
 
-    return 0;
+    return 0; // End of the program
 }
