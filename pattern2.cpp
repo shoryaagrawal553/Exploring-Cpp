@@ -1,59 +1,69 @@
-/*enter 4
-*             * 
-* *         * * 
-* * *     * * * 
-* * * * * * * * 
-* * *     * * * 
-* *         * * 
-*             *     */
+/* The program generates a diamond-shaped pattern based on user input.
+   Example for input 4:
+   *             * 
+   * *         * * 
+   * * *     * * * 
+   * * * * * * * * 
+   * * *     * * * 
+   * *         * * 
+   *             * 
+*/
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n,i,j;
-    cout<<"enter ";
-    cin>>n;
+    int n, i, j;
+    cout << "enter "; // Prompt the user for input
+    cin >> n;         // Read the number of rows for the top half of the diamond
 
-    for(i=1; i<=n; i++)
+    // Loop for the top half of the diamond
+    for (i = 1; i <= n; i++)
     {
-        for(j=1; j<=i; j++)
+        // Print increasing stars on the left side
+        for (j = 1; j <= i; j++)
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        for(j=1; j<=(2*n)-(2*i); j++)
+        // Print spaces in the middle
+        for (j = 1; j <= (2 * n) - (2 * i); j++)
         {
-            cout<<"  ";
+            cout << "  ";
         }
 
-        for(j=1; j<=i; j++)
+        // Print increasing stars on the right side
+        for (j = 1; j <= i; j++)
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        cout<<endl;
+        cout << endl; // Move to the next row
     }
 
-    for(i=n-1; i>=1; i--)
+    // Loop for the bottom half of the diamond
+    for (i = n - 1; i >= 1; i--)
     {
-        for(j=1; j<=i; j++)
+        // Print decreasing stars on the left side
+        for (j = 1; j <= i; j++)
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        for(j=1; j<=(2*n)-(2*i); j++) // spaces
+        // Print spaces in the middle
+        for (j = 1; j <= (2 * n) - (2 * i); j++) // spaces
         {
-            cout<<"  ";
+            cout << "  ";
         }
 
-        for(j=1; j<=i; j++)// stars
+        // Print decreasing stars on the right side
+        for (j = 1; j <= i; j++) // stars
         {
-            cout<<"* ";
+            cout << "* ";
         }
 
-        cout<<endl;
+        cout << endl; // Move to the next row
     }
     return 0;
 }
