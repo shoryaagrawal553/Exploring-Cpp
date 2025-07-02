@@ -2,7 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
-using namespace std;
+using namespace std; 
 
 // Define the function: f(x) = x^3 - 4
 double f(double x) {
