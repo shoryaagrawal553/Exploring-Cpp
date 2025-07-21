@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    int n;
+    int n; 
     // Prompt user for the number of equations (and variables) 
     cout << "Enter the number of equations: ";
     cin >> n;
