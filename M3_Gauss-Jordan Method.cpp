@@ -7,7 +7,7 @@ int main() {
     // Prompt user for the number of equations (and variables)
     cout << "Enter the number of equations: ";
     cin >> n;
-
+ 
     double a[n][n + 1]; // Augmented matrix to store coefficients and constants
 
     // Input the coefficients and constants for each equation
