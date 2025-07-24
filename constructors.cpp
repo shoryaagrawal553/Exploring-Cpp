@@ -5,7 +5,7 @@ class Example
 {
 private:
     int a, b;
-
+ 
 public:
     Example()
     {
