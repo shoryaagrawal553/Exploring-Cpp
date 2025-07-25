@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    // Declare variables
+    // Declare variables 
     int i, j, n;
     
     // Prompt user to enter the size of the pattern
