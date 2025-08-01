@@ -2,7 +2,7 @@
 #include <iomanip> 
 using namespace std;   
   
-int main() {
+int main() { 
     int n; 
     // Prompt user for the number of equations (and variables) 
     cout << "Enter the number of equations: "; 
