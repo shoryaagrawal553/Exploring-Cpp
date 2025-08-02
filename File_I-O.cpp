@@ -3,7 +3,7 @@
 using namespace std;   
    
 int main()
-{
+{ 
     //cout << "to write in a file";
  
     ofstream outFile("sample_file.txt");
@@ -24,6 +24,7 @@ int main()
 
     return 0;
 }
+
 
 
 
