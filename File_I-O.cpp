@@ -1,7 +1,7 @@
 #include <iostream> 
 #include <fstream>
 using namespace std; 
- 
+  
 int main()
 {
     //cout << "to write in a file";
@@ -24,3 +24,4 @@ int main()
 
     return 0;
 }
+
