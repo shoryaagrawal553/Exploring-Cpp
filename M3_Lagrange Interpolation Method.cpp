@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> 
 using namespace std; 
 
 int main() {  
@@ -44,6 +44,7 @@ int main() {
 // This code implements the Lagrange Interpolation Method to find the value of a function at a given point xp
 // based on provided data points (x, f(x)).
 // It uses the Lagrange interpolation formula to compute the result and outputs it with six decimal places of precision.    
+
 
 
 
