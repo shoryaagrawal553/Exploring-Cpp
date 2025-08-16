@@ -3,7 +3,7 @@
     Example: 153 = 1^3 + 5^3 + 3^3 = 153 */
 
 #include<iostream> 
-#include<cmath>
+#include<cmath> 
 using namespace std;
 
 // Function to count the number of digits in a number
@@ -53,4 +53,5 @@ int main()
 
     return 0; // Return 0 to indicate successful execution
 }
+
 
