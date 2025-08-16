@@ -1,7 +1,7 @@
 /* An Armstrong number is a number that is equal to the sum of its digits 
     raised to the power of the number of digits.
     Example: 153 = 1^3 + 5^3 + 3^3 = 153 */
-
+ 
 #include<iostream> 
 #include<cmath> 
 using namespace std;
@@ -53,5 +53,6 @@ int main()
 
     return 0; // Return 0 to indicate successful execution
 }
+
 
 
