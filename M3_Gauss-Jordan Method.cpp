@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip> 
 using namespace std;    
-  
+   
 int main() {    
     int n;  
     // Prompt user for the number of equations (and variables) 
@@ -49,6 +49,7 @@ int main() {
 // This code implements the Gauss-Jordan method to solve a system of linear equations.
 // It reads the augmented matrix, performs row operations to reach reduced row-echelon form,
 // and prints the solutions to the variables.
+
 
 
 
