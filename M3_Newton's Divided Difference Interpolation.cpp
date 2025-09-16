@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <iomanip>
-using namespace std;
+using namespace std; 
 
 int main() {
     int n;
@@ -57,3 +57,4 @@ int main() {
 // This code implements Newton's Divided Difference Interpolation Method.
 // It constructs a divided difference table based on the input data points and then uses it to compute the
 // interpolated value at a specified point.
+
