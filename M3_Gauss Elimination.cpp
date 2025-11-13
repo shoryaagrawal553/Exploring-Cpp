@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-int main() {
+int main() { 
     int n;
     cout << "Enter the number of equations: ";
     cin >> n;
@@ -58,3 +58,4 @@ int main() {
 
 // This code implements the Gauss Elimination method to solve a system of linear equations.
 // It includes forward elimination with partial pivoting and backward substitution to find the solution vector.
+
