@@ -4,7 +4,7 @@
 #include <iomanip> 
 using namespace std;       
    
-int main() {
+int main() { 
     int n;
     // Prompt user for the number of data points
     cout << "How many records you want to enter: ";
@@ -57,6 +57,7 @@ int main() {
 // This code implements Newton's Divided Difference Interpolation Method.
 // It constructs a divided difference table based on the input data points and then uses it to compute the
 // interpolated value at a specified point.
+
 
 
 
