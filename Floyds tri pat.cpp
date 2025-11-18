@@ -1,7 +1,7 @@
 /*
 This program generates Floyd's triangle up to the given number of rows.
 Example:
-Enter 3 
+Enter 3  
 1
 2 3
 4 5 6
@@ -32,6 +32,7 @@ int main()
 
     return 0;
 }
+
 
 
 
