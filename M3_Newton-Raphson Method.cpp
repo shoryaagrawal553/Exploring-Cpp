@@ -2,7 +2,7 @@
 #include <iomanip>     // For output formatting (setprecision, setw)
 #include <cmath>       // For mathematical functions like fabs()
 using namespace std;   
-    
+     
 // Define the function f(x) = x^3 - x - 3
 double f(double x) {
     return x * x * x - x - 3;
@@ -50,6 +50,7 @@ int main() {
 
     return 0;   // Program ends
 }
+
 
 
 
