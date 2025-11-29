@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iomanip>
 using namespace std;  
-
+ 
 // Define the function f(x) = 2x^3 + 3x - 1
 double f(double x) {
     return 2 * x * x * x + 3 * x - 1; 
@@ -46,6 +46,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
