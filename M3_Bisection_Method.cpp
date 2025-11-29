@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <cmath>
-#include <iomanip>
+#include <iomanip> 
 using namespace std;   
  
 // Define the function f(x) = 2x^3 + 3x - 1
@@ -46,6 +46,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
