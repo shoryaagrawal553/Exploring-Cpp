@@ -3,7 +3,7 @@ using namespace std;
 
 class EmptyClass {
     // Empty class
-};
+}; 
 
 int main() {
     EmptyClass obj;
@@ -11,3 +11,4 @@ int main() {
     return 0; 
 
 }
+
