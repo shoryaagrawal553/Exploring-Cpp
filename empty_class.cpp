@@ -10,5 +10,3 @@ int main() {
     cout << "An object of EmptyClass has been created." << endl;
     return 0; 
 }
-
-
