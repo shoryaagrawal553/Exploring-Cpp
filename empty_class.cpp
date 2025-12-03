@@ -9,6 +9,6 @@ int main() {
     EmptyClass obj;
     cout << "An object of EmptyClass has been created." << endl;
     return 0; 
-
 }
+
 
