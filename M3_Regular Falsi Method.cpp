@@ -1,5 +1,5 @@
 // This code implements the False Position Method (Regula Falsi Method) to find a root of the function f(x) = x^3 - x - 3.
-
+ 
 #include <iostream> 
 #include <iomanip>
 #include <cmath>
@@ -64,5 +64,6 @@ int main() {
 
     return 0;
 }
+
 
 
