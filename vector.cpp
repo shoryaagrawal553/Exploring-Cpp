@@ -1,7 +1,7 @@
 #include <iostream>  
 #include <vector> // for using vector
 using namespace std;
-
+ 
 int main()
 {
     // Different vector initializations
